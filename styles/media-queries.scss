@@ -1,0 +1,33 @@
+@media (max-width: 845px) {
+  body {
+    .header-container {
+      background-color: black;
+    }
+
+    .content-container {
+      display: flex;
+      justify-content: center;
+
+      .hero-text {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: 610px) {
+  body {
+    .header-container {
+      .header-left {
+        .header-spacer {
+          width: 30px;
+        }
+      }
+      .header-right {
+        .header-link {
+          display: none;
+        }
+      }
+    }
+  }
+}

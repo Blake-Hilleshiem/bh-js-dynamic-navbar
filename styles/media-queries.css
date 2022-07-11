@@ -1,0 +1,26 @@
+@media (max-width: 845px) {
+  body .header-container {
+    background-color: black;
+  }
+  body .content-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .content-container .hero-text {
+    width: 80%;
+  }
+}
+
+@media (max-width: 610px) {
+  body .header-container .header-left .header-spacer {
+    width: 30px;
+  }
+  body .header-container .header-right .header-link {
+    display: none;
+  }
+}
+/*# sourceMappingURL=media-queries.css.map */
