@@ -1,0 +1,11 @@
+#2) Dynamic Navbar
+
+- dont care on content
+  - ie logo on the left, links on the right
+- media queries that make the navbar responsive
+- at a particular breakpoint (610) display hamburger instead of links
+- clicking the hamburger will open / close the menu showing the links
+
+Advise:
+-start with the pieces(html, skeleton, styles, media queries, js)
+-dont get hung up in one place too long (move on until nothing's left)
