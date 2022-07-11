@@ -1,7 +1,4 @@
 @media (max-width: 845px) {
-  body .header-container {
-    background-color: black;
-  }
   body .content-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -16,11 +13,36 @@
 }
 
 @media (max-width: 610px) {
+  body .header-container .header-left {
+    width: 55%;
+  }
   body .header-container .header-left .header-spacer {
     width: 30px;
   }
+  body .header-container .header-right {
+    width: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 30px;
+  }
   body .header-container .header-right .header-link {
     display: none;
+  }
+  body .header-container .header-right .hamburger-button {
+    display: block;
+  }
+  body .header-container .header-right .hamburger-button:hover {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 380px) {
+  body .content-container .hero-text {
+    font-size: 3.5rem;
   }
 }
 /*# sourceMappingURL=media-queries.css.map */

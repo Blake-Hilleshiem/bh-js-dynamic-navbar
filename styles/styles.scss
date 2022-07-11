@@ -55,6 +55,12 @@ body {
       a:hover {
         color: rgb(91, 173, 224);
       }
+
+      .hamburger-button {
+        display: none;
+        color: rgb(28, 137, 206);
+        font-size: 2rem;
+      }
     }
   }
 
@@ -73,6 +79,7 @@ body {
       align-items: center;
       font-size: 5rem;
       font-weight: bold;
+      text-align: center;
     }
   }
 }

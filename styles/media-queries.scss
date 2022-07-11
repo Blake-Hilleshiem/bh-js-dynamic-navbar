@@ -1,7 +1,6 @@
 @media (max-width: 845px) {
   body {
     .header-container {
-      background-color: black;
     }
 
     .content-container {
@@ -19,14 +18,37 @@
   body {
     .header-container {
       .header-left {
+        width: 55%;
         .header-spacer {
           width: 30px;
         }
       }
       .header-right {
+        width: 45%;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 30px;
+
         .header-link {
           display: none;
         }
+        .hamburger-button {
+          display: block;
+        }
+
+        .hamburger-button:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  body {
+    .content-container {
+      .hero-text {
+        font-size: 3.5rem;
       }
     }
   }

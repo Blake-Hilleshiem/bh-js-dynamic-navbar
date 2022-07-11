@@ -76,6 +76,12 @@ body .header-container .header-right a:hover {
   color: #5bade0;
 }
 
+body .header-container .header-right .hamburger-button {
+  display: none;
+  color: #1c89ce;
+  font-size: 2rem;
+}
+
 body .content-container {
   height: 400px;
   width: 100vw;
@@ -104,5 +110,6 @@ body .content-container .hero-text {
           align-items: center;
   font-size: 5rem;
   font-weight: bold;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
