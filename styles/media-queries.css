@@ -27,8 +27,6 @@
         -ms-flex-align: start;
             align-items: flex-start;
     padding-top: 30px;
-    -webkit-transition: all 1s ease 0s;
-    transition: all 1s ease 0s;
   }
   body .header-container-open .header-left-open {
     width: 30%;
