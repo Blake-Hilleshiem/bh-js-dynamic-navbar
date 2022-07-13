@@ -13,6 +13,96 @@
 }
 
 @media (max-width: 610px) {
+  body .header-container-open {
+    height: 250px;
+    width: 100%;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 30px;
+    -webkit-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+  }
+  body .header-container-open .header-left-open {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .header-container-open .header-left-open .header-spacer {
+    width: 20%;
+  }
+  body .header-container-open .header-left-open .logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: #1c89ce;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .header-container-open .header-left-open i {
+    color: white;
+    font-size: 2rem;
+  }
+  body .header-container-open .header-left-open a {
+    text-decoration: none;
+  }
+  body .header-container-open .header-right-open {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 30px;
+  }
+  body .header-container-open .header-right-open .header-link-open {
+    display: block;
+    margin-top: 10px;
+    font-size: 2rem;
+  }
+  body .header-container-open .header-right-open .header-link-open a {
+    color: #1c89ce;
+    text-decoration: none;
+  }
+  body .header-container-open .header-right-open .header-link-open a:hover {
+    color: #5bade0;
+  }
+  body .header-container-open .header-right-open a {
+    color: #1c89ce;
+    text-decoration: none;
+  }
+  body .header-container-open .header-right-open a:hover {
+    color: #5bade0;
+  }
+  body .header-container-open .header-right-open .hamburger-button-open {
+    display: block;
+    color: #1c89ce;
+    font-size: 2rem;
+    text-align: right;
+  }
+  body .header-container-open .header-right-open .hamburger-button-open:hover {
+    cursor: pointer;
+  }
   body .header-container .header-left {
     width: 55%;
   }

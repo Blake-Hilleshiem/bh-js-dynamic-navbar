@@ -1,8 +1,5 @@
 @media (max-width: 845px) {
   body {
-    .header-container {
-    }
-
     .content-container {
       display: flex;
       justify-content: center;
@@ -16,6 +13,86 @@
 
 @media (max-width: 610px) {
   body {
+    .header-container-open {
+      height: 250px;
+      width: 100%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 30px;
+      transition: all 1s ease 0s;
+
+      .header-left-open {
+        width: 30%;
+        display: flex;
+
+        .header-spacer {
+          width: 20%;
+        }
+
+        .logo {
+          height: 50px;
+          width: 50px;
+          border-radius: 50px;
+          background-color: rgb(28, 137, 206);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        i {
+          color: white;
+          font-size: 2rem;
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+      .header-right-open {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-right: 30px;
+
+        .header-link-open {
+          display: block;
+          margin-top: 10px;
+          font-size: 2rem;
+          a {
+            color: rgb(28, 137, 206);
+            text-decoration: none;
+          }
+
+          a:hover {
+            color: rgb(91, 173, 224);
+          }
+        }
+
+        a {
+          color: rgb(28, 137, 206);
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: rgb(91, 173, 224);
+        }
+
+        .hamburger-button-open {
+          display: block;
+          color: rgb(28, 137, 206);
+          font-size: 2rem;
+          text-align: right;
+        }
+
+        .hamburger-button-open:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
     .header-container {
       .header-left {
         width: 55%;

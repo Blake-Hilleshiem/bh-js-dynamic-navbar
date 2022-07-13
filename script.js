@@ -3,48 +3,35 @@ const headerContainer = document.getElementById("header-container");
 const headerLinks = document.getElementsByClassName("header-link");
 const headerRight = document.getElementById("header-right");
 const headerLeft = document.getElementById("header-left");
-console.log(headerLinks);
-
-// headerLinks[0].style.display = "none";
-// console.log(headerLinks[0].style.display);
+const openHeaderLinks = document.getElementsByClassName("header-link-open");
 
 let onOrOff = true;
 
 hamburgerBtn.addEventListener("click", () => {
   if (onOrOff == true) {
-    hamburgerBtn.style = "text-align:right;";
-    headerLeft.style = "width:30%;";
-    headerContainer.style =
-      "height:250px; align-items:flex-start; padding-top:30px;";
-    headerContainer.style.transition = "1s";
-    headerRight.style = "flex-direction:column; width: 70%;";
+    headerContainer.className = "header-container-open";
+    headerLeft.className = "header-left-open";
+    headerRight.className = "header-right-open";
+    hamburgerBtn.className = "hamburger-button-open";
 
-    for (let el of headerLinks) {
-      el.style = "display:block; margin-top: 10px; font-size:2rem;";
+    for (let i of ["", "", "", ""]) {
+      for (let el of headerLinks) {
+        el.className = "header-link-open";
+      }
     }
+
     onOrOff = false;
   } else if (onOrOff == false) {
-    hamburgerBtn.style = "text-align:right;";
-    headerLeft.style = "width:40%;";
-    headerContainer.style =
-      "height:80px; align-items:flex-start; padding-top:30px;";
-    headerContainer.style.transition = "1s";
-    headerRight.style = "flex-direction:column; width: 60%;";
+    headerContainer.className = "header-container";
+    headerLeft.className = "header-left";
+    headerRight.className = "header-right";
+    hamburgerBtn.className = "hamburger-button";
 
-    for (let el of headerLinks) {
-      el.style = "display:none;";
+    for (let i of ["", "", "", ""]) {
+      for (let el of openHeaderLinks) {
+        el.className = "header-link";
+      }
     }
     onOrOff = true;
   }
 });
-
-// hamburgerBtn.style = "text-align:right;";
-//     headerLeft.style = "width:30%;";
-//     headerContainer.style =
-//       "height:250px; align-items:flex-start; padding-top:30px;";
-//     headerContainer.style.transition = "1s";
-//     headerRight.style = "flex-direction:column; width: 70%;";
-
-//     for (let el of headerLinks) {
-//       el.style = "display:block; margin-top: 10px; font-size:2rem;";
-//     }
